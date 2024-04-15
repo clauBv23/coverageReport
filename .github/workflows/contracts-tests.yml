@@ -2,8 +2,10 @@ name: test
 
 on: 
   workflow_dispatch:
-  push:
   pull_request:
+  push:
+    branches:
+      - main
 
 env:
   FOUNDRY_PROFILE: ci
